@@ -5,9 +5,8 @@
   "main": "./index.js",
   "type": "module",
   "scripts": {
-    "build": "npx tsc",
-    "start": "npx tsc & node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/cli.js"
   },
   "bin": {
     "gpt": "./dist/index.js"
@@ -15,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@langchain/langgraph": "^0.0.26",
     "commander": "^12.1.0",
     "dotenv": "^16.4.5",
     "figlet": "^1.7.0",
