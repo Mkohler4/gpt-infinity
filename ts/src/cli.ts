@@ -1,5 +1,5 @@
 // ts/src/cli.ts
-import { processTokens } from './index.js';
+import { processGraph } from './index.js';
 
 const input = process.argv[2];
 
@@ -8,5 +8,5 @@ if (!input) {
     process.exit(1);
 }
 
-const result = processTokens(input);
+const result = processGraph(input);
 console.log(result);
